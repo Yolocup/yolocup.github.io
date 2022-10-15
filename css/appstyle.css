@@ -1,38 +1,36 @@
+:root {
+  --background: #202020;
+  --content-background: #303030;
+  --highlights: #c8cb45;
+  --dark-highlights: #b4b62c;
+}
+
 @media only screen and (max-width: 700px) {
-.appcontainer {
-	display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-	font-size: 1em;
-	font-family: verdana;
-	width: min(1240px, 95%);
-	margin: auto;
-	
+  .appcontainer {
+    padding: 10px;
+    display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    font-size: 1em;
+    font-family: verdana;
+    width: min(1240px, 95%);
+    margin: auto;
+  }
 }
+
+@media only screen and (min-width: 701px) {
+  .appcontainer {
+    padding: 10px;
+    display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    font-size: 1em;
+    font-family: verdana;
+    width: min(1240px, 90%);
+    margin: auto;
+  }
 }
-@media only screen and (min-width: 701px) and (max-width: 1200px){
-.appcontainer {
-	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-	font-size: 1em;
-	font-family: verdana;
-	width: min(1240px, 90%);
-	margin: auto;
-	
-}
-}
-@media only screen and (min-width: 1200px) {
-.appcontainer {
-	display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-	font-size: 1em;
-	font-family: verdana;
-	width: min(1240px, 90%);
-	margin: auto;
-}
-}
+
 
 app {
   float: left;
@@ -43,11 +41,11 @@ app a {
   color: #DDD;
   text-align: center;
   text-decoration: none;
-  background: #303030;
+  background: var(--content-background);
   padding: 10px;
   border-radius: 12px;
 }
 app a:hover {
-  background-color: #26B;
+  background-color: var(--dark-highlights);
   color: #FFF;
 }
